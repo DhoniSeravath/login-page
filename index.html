@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       h2{
+       text-align: center;
+       margin-top :100px;
+       }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h2>Login</h2>
+        <div class="one">
+        <form action="LoginServlet" method="post">
+       <label><b>Username:</b> </label> <input type="text" name="username" required><br><br>
+        <label><b>Password:</b></label> <input type="password" name="password" required><br><br>
+        <div class="login">
+        <input type="submit" value="Login">
+        </div>
+        </form>
+        </div>
+    </div>
+   
+</body>
+</html>
