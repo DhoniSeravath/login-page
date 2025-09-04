@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOGRAPHY</title>
+    <style>
+      .heading{
+        color : white;
+         background-color: green; 
+         text-align :center;
+         margin-left :10px;
+         margin-right:10px;
+         padding :15px;
+      }
+      .cool{
+        margin-left : 100px;
+         margin-right : 100px;
+        color : green;
+        background-color: white;
+          padding :10px;
+      }
+      body{
+        background-color: rgb(238, 233, 233);
+      }
+      .Sty{
+        color : white;
+        background-color:green;
+        border-radius: 10px;
+        padding :5px;
+      }
+      button{
+        border : none;
+        background-color : green;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover{
+         background-color : red;
+      }
+    </style>
+</head>
+<body>
+    <h1 class="heading">DHONI BIO-DATA</h1>
+    <div class="cool">
+    <h3 style="border-bottom :2px solid green;"><b>Personal Details</b></h3>
+    <p style="color : black"><b>Name :</b> Dhoni Nayak</p>
+     <p style="color : black"><b>Age :</b> 18</p>
+      <p style="color : black"><b>Location :</b> Hyderabad</p>
+      <h3 style="border-bottom :2px solid green;">Education</h3>
+      <p style="color : black">Diploma In Computer Science Engineering</p>
+      <h3 style="border-bottom :2px solid green;"><b>Course</b></h3>
+      <p style="color : black">Python <br> C Programming <br> Git</p>
+      <h3 style="border-bottom :2px solid green;">Skills</h3>
+      <span class="Sty"> HTML</span>
+      <span class="Sty"> CSS</span>
+      <span class="Sty"> JAVASCRIPT</span>
+      <span class="Sty"> REACT</span>
+      <span class="Sty"> NODE JS</span>
+      <h3 style="border-bottom :2px solid green;"> Contact</h3>
+      <p style="color : black;"><b>Email :</b> dhoniseravath0134@gmail.com</p>
+        <p style="color : black;"><b>Phone no:</b> 7386140829</p>
+        <button onclick="display()" id="error">Show more Details</button>
+        <div id="good" style ="display : none">
+             <h3 style =" border-bottom:2px solid green;"> Experience</h3>
+             <p style="color : black">There is No Experience in any Job</p>
+              <h3 style =" border-bottom:2px solid green;">Hobbies</h3>
+              <p style="color :black">
+                Fast learning
+                <br>
+                Good Listening Skills
+                <br>
+               Playing Games (Outdoor and Indoor)
+               <br>
+               Reading Books
+              </p> 
+              
+            </div>
+    </div>
+     <script>
+              function display()
+              {
+                const details = document.getElementById("good");
+                if(details.style.display=="none")
+                {
+                      details.style.display="block";
+                      document.getElementById("error").innerHTML="Hide Details";
+                }
+                else {
+                    details.style.display="none";
+                    document.getElementById("error").innerHTML="show more Details";
+                }
+              }
+           </script>
+</body>
+</html>
